@@ -1,0 +1,126 @@
+body {
+    font-family: Arial;
+    font-size: 13px;
+}
+pre {
+    background: #eee;
+    padding: 0.25em 0.5em;
+}
+
+.error {color: #FF0000; font-weight: bold}
+
+
+table.form-editting {
+    border-collapse: collapse;
+}
+
+table.form-editting th, table.form-editting td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.td-title {text-align: right; width: 110px;}
+
+table.top-menu {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+table.top-menu td {
+  width: 25%;
+}
+
+table.top-menu tr.lsc-main-menu td {
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  background-color: lightgray;
+  border-bottom: 1px solid gray;
+}
+
+table.top-menu tr.lsc-main-menu td.active {
+  background-color: white;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid white;
+}
+
+table.top-menu tr.lsc-main-menu a {
+  text-decoration: none;
+  color: blue;
+}
+
+table.top-menu tr.lsc-sub-menu a {
+  text-decoration: none;
+  color: blue;
+}
+
+table.top-menu tr.lsc-sub-menu td {
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+table.top-menu tr.lsc-sub-menu td.lsc-td-left {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: gray;
+}
+
+table.top-menu tr.lsc-sub-menu td.lsc-td-right {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: gray;
+}
+
+table.top-menu tr.lsc-sub-menu td {
+  border-bottom-style: none;
+  padding-top: 8px;
+}
+
+table.top-menu tr.lsc-main-menu td.active a,
+table.top-menu tr.lsc-sub-menu td.lsc-active a {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+table.table-list {
+  width: 100%;
+}
+
+table.table-list td {
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+
+table.title-search td.lsc-submenu a {
+  text-decoration: none;
+  color: blue;
+  text-align: right;
+  font-weight: bold;
+}
+
+table.title-search td.lsc-submenu {
+  text-align: right;
+}

@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>OBS Studio Name Tag</title>
+<style type="text/css">@import url("../css/nametag.css");</style>
+<script src='../js/jquery-3.3.1.min.js'></script>
+<script src='../js/nametag.js'></script>
+<script type="text/javascript">
+  
+  var html = 
+"<div class='container'>\n" +
+"  <div class='triangle-left'></div>" +
+"  <div class='preacher-info'>\n" +
+"    <span class='preacher-name'>" + preacherName + "</span>\n" +
+"  </div>\n" +
+"  <div class='ministry-info'>\n" +
+"    <span class='ministry'>" + preacherMinistry + "</span>\n" +
+"  </div>\n" +
+"  <div class='logo-container'>\n" +
+"    <div class='logo'>\n" +
+"      <img class='logo-image' src='" + churchLogo + "'>\n" +
+"    </div>\n" +
+"  </div>\n" +
+"</div>\n";
+  
+  $(document).ready(function() {
+    $("body").append(html);
+    
+    $("div.logo-container").animate({"opacity": 1}, 700, function() {
+    	$("div.preacher-info").animate({"width": "548px", "opacity": 1}, 1000, function() {
+        	$("div.triangle-left").animate({"height": "18px", "opacity": 1}, 300, function() {
+        	  $("div.ministry-info").css({"opacity": 1});
+        	  $("div.ministry-info").animate({"height": "16px"}, 300);
+        	});
+        });
+    });
+    
+    setTimeout(function () {
+  	  $("div.ministry-info").animate({"height": "0"}, 300, function() {
+  		$("div.ministry-info").css({"opacity": 0});
+  		$("div.triangle-left").animate({"height": "0", "opacity": 0}, 300, function() {
+  		  $("div.preacher-info").animate({"width": "0", "opacity": 0}, 500, function() {
+  			$("div.logo-container").animate({"opacity": 0}, 500);
+          });
+    	});
+  	  });
+    }, 15000);
+  });
+  
+</script>
+</head>
+<body>
+</body>
+</html>

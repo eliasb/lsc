@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 500px;
+  margin-left: -200px;
+  font: 300 30px/1 'Arial Black', sans-serif;
+  text-align: center;
+/*  text-transform: uppercase; */
+  animation: 80s credits linear 1;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+
+.activity {
+  margin-bottom: 5px;
+  font-size: 33px;
+  color: #dfdf00;
+}
+
+.contrib {
+  margin-bottom: 50px;
+  font-size: 27px;
+  color: #dfdf00;
+}
+
+.name {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+@keyframes credits {
+    0% { top:  100%; }
+  100% { top: -500%; }
+}
