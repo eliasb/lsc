@@ -1,8 +1,12 @@
-//Edit the "phpdesktop-chrome\php\php.ini" and enable the extension:
+//Rename the file "C:\phpdesktop-chrome\www\index.php" to "C:\phpdesktop-chrome\www\index2.php"
 
+//Create a new "C:\phpdesktop-chrome\www\index.php" file and add the following line to it:
+<script>window.location = 'lsc/lsc-preacher-list.php'</script>
+
+//Edit the "phpdesktop-chrome\php\php.ini" and add the following line to the end of the "; Extensions" section:
 extension=php_mbstring.dll
 
-//Edit the file "phpdesktop-chrome\settings.json" and change the default window size to the following:
+//Edit the file "phpdesktop-chrome\settings.json" and change the "main_window" "default_size" to the following value:
 
 "default_size": [800, 600],
 
