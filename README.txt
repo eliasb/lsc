@@ -1,3 +1,5 @@
+//Live Stream your Church
+
 //Rename the file "C:\phpdesktop-chrome\www\index.php" to "C:\phpdesktop-chrome\www\index2.php"
 
 //Create a new "C:\phpdesktop-chrome\www\index.php" file and add the following line to it:
